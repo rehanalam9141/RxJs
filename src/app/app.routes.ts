@@ -19,6 +19,10 @@ import { DebounceTimeComponent } from './components/observable/debounce-time/deb
 import { SubjectComponent } from './components/observable/subject/subject.component';
 import { ReplaySubjectComponent } from './components/observable/replay-subject/replay-subject.component';
 import { AsyncSubjectComponent } from './components/observable/async-subject/async-subject.component';
+import { ConcatComponent } from './components/observable/concat/concat.component';
+import { MargeComponent } from './components/observable/marge/marge.component';
+import { MargeMapComponent } from './components/observable/marge-map/marge-map.component';
+import { ConcatMapComponent } from './components/observable/concat-map/concat-map.component';
 
 export const routes: Routes = [
     { path:'', redirectTo:'home', pathMatch:'full'},
@@ -42,6 +46,10 @@ export const routes: Routes = [
         { path:'subject', component:SubjectComponent },
         { path:'replay-subject', component:ReplaySubjectComponent },
         { path:'async-subject', component:AsyncSubjectComponent },
+        { path:'concat', component:ConcatComponent },
+        { path:'marge', component:MargeComponent },
+        { path:'merge-map', component:MargeMapComponent },
+        { path:'concat-map', component:ConcatMapComponent },
     ]},
     { path:'**', component:HomeComponent},
 ];

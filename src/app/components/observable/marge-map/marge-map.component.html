@@ -1,0 +1,45 @@
+<div>
+    <h2>Merge Map</h2>
+     <p>Projects each source value to an Observable which is merged in the output Observable.</p>
+     <P>Maps each value to an observable, then flatten all of these inner Observable using mergeAll</P>
+     
+     <h2>Merge  All</h2>
+     <p>Converts a higher-order Observable into a first-order Observable which concurrently delivers all values that are emitted on the inner Observables.</p>
+     <h2>Map Operator</h2>
+        <p>Applies a given project function to
+         each value emitted by the source Observable, and emits the resulting values as an Observable.</p>
+     <P><strong>map + mergeAll = mergeMap</strong></P>
+     <hr><br>
+     <div class="row">
+         <div class="col-md-4">
+             <strong>Ex-1 | Map</strong>
+             <hr>
+             <p class="bg-light py-2 px-3 border rounded">
+                 <strong>Tech Video List</strong> 1,2,3,4,5
+             </p>
+             <ul id="elContainer">           
+             </ul>
+         </div>
+         <div class="col-md-4">
+             <strong>Ex-2 | Map + mergeAll</strong>
+             <hr>
+             <p class="bg-light py-2 px-3 border rounded">
+                 <strong>Comedy Video List</strong> 1,2,3
+             </p>
+             <ul id="elContainer2">           
+            </ul>
+         </div>
+         <div class="col-md-4">
+             <strong>Ex-3 | mergeMap</strong>
+             <hr>
+             <p class="bg-light py-2 px-3 border rounded">
+                 <strong>News Video List</strong> 1,2,3,4
+             </p>
+             <ul id="elContainer3">           
+            </ul>
+ 
+         </div>
+     </div>
+ </div>
+ 
+
