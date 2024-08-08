@@ -1,0 +1,70 @@
+<div class="my-3">
+    <h2>Of and From</h2>
+    <P>Of operator Converts the arguments to an observable sequence.</P>
+    <br>
+    <strong>Example-1 (OF)</strong>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data: </strong>OF('Rehan','Alam','Ahmad')</p>
+        
+        <hr>
+        <h3>Answar</h3>
+        <ul id="elContainer">          
+        </ul>
+        </div>
+
+        <div class="col-md-4">
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data: </strong>OF(&#123;a:'Rehan',b:'Alam',c:'Ahmad'&#125;)</p>
+                <small>Example with object</small>
+        
+        <hr>
+        <h3>Answar</h3>
+        <ul> 
+            <li><strong>a :</strong> {{obsMessage.a}}</li>
+            <li><strong>b :</strong> {{obsMessage.b}}</li>
+            <li><strong>c :</strong> {{obsMessage.c}}</li>
+        </ul>
+        </div>
+        <hr>
+        
+    </div>
+    <div class="row">
+            <h2>From</h2>
+            <p>Creates an Observable from an Array, an array-like object, a Promise, an iterable object, or an Observable-like object.</p>
+            <strong>Example-2 (From)</strong>
+            <hr>
+            <div class="col-md-4">
+                <strong>Array</strong>
+                <hr>
+                <p class="bg-light py-2 px-3 border rounded">
+                    <strong>Data: </strong>From(['Html','Angular','JavaScript'])</p>
+                <hr>
+                <h3>Answar</h3>
+                <ul id="elContainer3">          
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <strong>Promise</strong>
+                <hr>
+                <p class="bg-light py-2 px-3 border rounded">
+                    <strong>Data: </strong>Promise to observable</p>
+                <hr>
+                <h3>Answar</h3>
+                <ul id="elContainer4">          
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <strong>String</strong>
+                <hr>
+                <p class="bg-light py-2 px-3 border rounded">
+                    <strong>Data: </strong>String to observable</p>
+                <hr>
+                <h3>Answar</h3>
+                <ul id="elContainer5">          
+                </ul>
+            </div>
+    </div>
+</div>

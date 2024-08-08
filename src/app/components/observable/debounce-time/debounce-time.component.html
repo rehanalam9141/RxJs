@@ -1,0 +1,48 @@
+<div class="my-3">
+    <h4>Debounce</h4>
+    <p>Emits a notification from the source Observable only after a particular time span determined by another Observable has passed without another source emission.</p>
+    <h4>Debounce Time</h4>
+    <p>Emits a notification from the source Observable only after a particular time span has passed without another source emission.</p>
+    <h4>Distinct</h4>
+    <p>Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from previous items.</p>
+    <h4>Distinct Until Changed</h4>
+    <p>Returns a result Observable that emits all values pushed by the source observable if they are distinct in comparison to the last value the result observable emitted</p>
+    <h4>Distinct Until Key Changed</h4>  
+    <p>Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item, using a property accessed by using the key provided to check if the two items are distinct.</p>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+           <p> <strong>Example-1 </strong><strong class="text-primary">Debounce-time</strong></p>
+            <hr>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Search</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" placeholder="Search....." #myInput>
+                </div>
+              </div>
+              <span *ngIf="reqData != null">Requested Data: <strong class="text-success">{{reqData}}</strong></span>
+        </div>
+        <div class="col-md-6">
+            <p> <strong>Example-2 </strong><strong class="text-warning">Distinct Until Changed</strong></p>
+             <hr>
+             <div class="form-group row">
+                 <label class="col-sm-2 col-form-label">Search</label>
+                 <div class="col-sm-10">
+                   <input type="text" class="form-control" placeholder="Search....." #myInput2>
+                 </div>
+               </div>
+               <span *ngIf="reqData2 != null">Requested Data: <strong class="text-success">{{reqData2}}</strong></span>
+         </div>       
+    </div>
+
+    <div> 
+        Ng-template Content 
+        <div *ngIf="status else showNgTemplateContent"> 
+           Shouldn't be displayed 
+        </div>
+     </div>
+
+    <ng-template #showNgTemplateContent> Should be displayed
+    </ng-template>
+</div>
+

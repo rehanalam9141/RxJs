@@ -1,0 +1,74 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="my-3">
+                <h2>Promise</h2>
+                <p>
+                    The <strong>Promise</strong> object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+                </p>
+                <ul>
+                    <li>resolve</li>
+                    <li>reject</li>
+                </ul>
+                <hr>
+                <h2>Observable</h2>
+                <p>An <strong>Observable</strong> represents a stream of data or events over time. It can be subscribed to, and it emits values or notifications to its subscribers.</p>
+            </div>
+        
+        
+            <div class="col-md-12">
+                <h2>The difference between Promises and Observables</h2>
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Observables</th>
+                    <th scope="col">Promises</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Emit multiple values over a period of time.</td>
+                    <td>Emit a single value at a time.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Are lazy: they’re not executed until we subscribe to them using the subscribe() method.</td>
+                    <td>Are not lazy: execute immediately after creation.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Have subscriptions that are cancellable using the unsubscribe() method, which stops the listener from receiving further values.</td>
+                    <td>Are not cancellable.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Provide the map for forEach, filter, reduce, retry, and retryWhen operators.</td>
+                    <td>Don’t provide any operations.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Deliver errors to the subscribers.</td>
+                    <td>Push errors to the child promises.</td>
+                  </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div>
+                <h2>Example-1: with Static data</h2>
+                <P>Buy a Laptop : <strong>{{promiseVal}}</strong></P>
+            </div>
+
+            <div>
+                <h2>Example-2: with Dynamic data</h2>
+                <P>Buy a Laptop : <strong>{{Dell.brand}}</strong></P>
+                <P>Buy a Laptop : <strong>{{Dell.hardDisk}}</strong></P>
+                <P>Buy a Laptop : <strong>{{Dell.color}}</strong></P>
+            </div>
+            
+        </div>
+    </div>
+</div>
