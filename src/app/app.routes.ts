@@ -23,6 +23,9 @@ import { ConcatComponent } from './components/observable/concat/concat.component
 import { MargeComponent } from './components/observable/marge/marge.component';
 import { MargeMapComponent } from './components/observable/marge-map/marge-map.component';
 import { ConcatMapComponent } from './components/observable/concat-map/concat-map.component';
+import { SwitchMapComponent } from './components/observable/switch-map/switch-map.component';
+import { SwitchMap2Component } from './components/observable/switch-map2/switch-map2.component';
+import { ExhaustMapComponent } from './components/observable/exhaust-map/exhaust-map.component';
 
 export const routes: Routes = [
     { path:'', redirectTo:'home', pathMatch:'full'},
@@ -50,6 +53,9 @@ export const routes: Routes = [
         { path:'marge', component:MargeComponent },
         { path:'merge-map', component:MargeMapComponent },
         { path:'concat-map', component:ConcatMapComponent },
+        { path:'switch-map', component:SwitchMapComponent },
+        { path:'switch-map2', component:SwitchMap2Component },
+        { path:'exhaustMap', component:ExhaustMapComponent },
     ]},
     { path:'**', component:HomeComponent},
 ];
